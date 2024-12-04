@@ -1,10 +1,9 @@
-import Footer from "./footer";
-import NavBar from "./navBar";
-
+import Footer from "./website-shared/footer";
+import Header from "./website-shared/header";
 export default function Home() {
   return (
     <>
-      <NavBar currentPage="Home"/>
+      <Header currentPage="Home"/>
       <h1>Home</h1>
       <Footer/>
     </>

@@ -25,3 +25,8 @@ h1 {
   line-height: 2.5rem;
   padding: 2.5rem;
 }
+
+p a {
+  color: #0000EE;
+  text-decoration: underline;
+}

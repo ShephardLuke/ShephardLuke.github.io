@@ -1,3 +1,5 @@
+// website-shared v1.1
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,6 +13,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'link': '#0000EE',
+        'dark-blue':'#0d203b',
+        'light-blue':'#1a3e74',
+        'darkest-blue':'#0a182b',
+        'lightest-blue': '#3b82f6',
       },
     },
   },

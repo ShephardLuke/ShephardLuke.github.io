@@ -1,3 +1,5 @@
+/* website-shared v1.1 */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,10 +17,46 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: white;
+  background: theme('colors.darkest-blue');
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input {
+  color: white;
+  background: theme('colors.dark-blue');
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td, th {
+  text-wrap: wrap;
+  word-break: break-all;
+  padding: 1rem;
+}
+
+div {
+  background-color: theme('colors.dark-blue');
+}
+
+.header {
+  background-color: theme('colors.darkest-blue');
+}
+
+table {
+  background-color: theme('colors.light-blue');
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  text-wrap: nowrap;
+}
+
+a:hover {
+  color: grey
+}
+
+/* THIS WEBSITE ONLY */
 
 h1 {
   font-size: 2.25rem;
@@ -27,6 +65,6 @@ h1 {
 }
 
 p a {
-  color: #0000EE;
+  color: coral;
   text-decoration: underline;
 }

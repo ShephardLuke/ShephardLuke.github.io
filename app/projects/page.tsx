@@ -2,21 +2,20 @@
 
 import Footer from "../website-shared/footer"
 import Header from "../website-shared/header"
-import { Project } from "./Project";
-
-import Projects from "./projects.json";
+import { ALL_PROJECTS } from "./allProjects";
+import ProjectDisplay from "./projectDisplay";
 
 export default function Page() {
-    console.log(Project.getProjectsFromJSON(Projects));
-    
+    const projectDisplays = ALL_PROJECTS.map(project => <ProjectDisplay project={project} key={project.getName()}/>)   
 
     return (
         <>
-            {/* <Header currentPage="Projects"/> */}
-            {/* <div className="p-10">
+            <Header currentPage="Projects"/>
+            <div className="main">
                 <h1>Projects</h1>
-            </div> */}
-            {/* <Footer/> */}
+                {projectDisplays}
+            </div>
+            <Footer/>
         </>
     )
 }

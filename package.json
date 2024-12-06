@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,7 +23,7 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.3"
   },
-  "description": "Personal Website (Work in progress)",
+  "description": "Luke Christopher Shephard's personal website",
   "main": "index.js",
   "author": "Luke Christopher Shephard",
   "license": "MIT"

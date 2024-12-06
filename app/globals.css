@@ -38,6 +38,10 @@ div {
   background-color: theme('colors.dark-blue');
 }
 
+.main {
+  padding: 2.5rem;
+}
+
 .header {
   background-color: theme('colors.darkest-blue');
 }
@@ -61,7 +65,8 @@ a:hover {
 h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
-  padding: 2.5rem;
+  text-decoration: underline;
+  padding-bottom: 2.5rem;
 }
 
 p a {

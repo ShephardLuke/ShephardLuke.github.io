@@ -1,30 +1,23 @@
-type project = {displayVersion: number}
-
-
 export class Project {
     private name: string;
     private title: string;
+    private isPrivate: boolean;
 
-    constructor(name: string, title: string) {
+    constructor(name: string, title: string, isPrivate?: boolean) {
         this.name = name;
         this.title = title;
+        this.isPrivate = isPrivate ? isPrivate : false;
     }
 
-    static getProjectsFromJSON(projectJSON: {[key: string]: project}) {
+    getName() {
+        return this.name;
+    }
 
-        const projects = [];
+    getTitle() {
+        return this.title;
+    }
 
-        for (const name of Object.keys(projectJSON)) {
-            const displayVersion = projectJSON[name].displayVersion;
-
-            if (displayVersion == 1) {  
-                type displayV1 = project & {title: string};
-    
-                const toConvert = projectJSON[name] as displayV1;        
-                const project = new Project(name, toConvert.title)
-                console.log(project)
-            }
-
-        }
+    getIsPrivate() {
+        return this.isPrivate;
     }
 }

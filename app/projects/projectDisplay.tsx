@@ -1,4 +1,4 @@
-import { NameLink } from "../website-shared/nameLink";
+import { NameLink } from "../template/link/nameLink";
 import { Project } from "./project";
 
 export default function ProjectDisplay({project}: {project: Project}) {

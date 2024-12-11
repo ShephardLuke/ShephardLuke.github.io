@@ -10,6 +10,10 @@ export const ALL_PROJECTS = [
         "Database Demo"
     ),
     new Project (
+        "website-template",
+        "Website Template"
+    ),
+    new Project (
         "tic-tac-toe",
         "Tic Tac Toe"
     ),

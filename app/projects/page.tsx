@@ -1,7 +1,7 @@
 'use client'
 
-import Footer from "../website-shared/footer"
-import Header from "../website-shared/header"
+import Footer from "../template/global/footer"
+import Header from "../template/global/header"
 import { ALL_PROJECTS } from "./allProjects";
 import ProjectDisplay from "./projectDisplay";
 
@@ -11,7 +11,7 @@ export default function Page() {
     return (
         <>
             <Header currentPage="Projects"/>
-            <div className="main">
+            <div className="main text-2xl">
                 <h1>Projects</h1>
                 {projectDisplays}
             </div>

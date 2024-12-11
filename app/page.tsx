@@ -1,5 +1,5 @@
-import Footer from "./website-shared/footer";
-import Header from "./website-shared/header";
+import Footer from "./template/global/footer";
+import Header from "./template/global/header";
 
 export default function Page() {
   return (
